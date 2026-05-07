@@ -1,15 +1,16 @@
 #include <iostream>
+#include <vector>
+
 using namespace std;
 
 int main() {
-
     int n;
     double x;
 
     cout << "Quantidade de coeficientes: ";
     cin >> n;
 
-    double a[n];
+    vector<double> a(n);
 
     for(int i = 0; i < n; i++) {
         cout << "Coeficiente a[" << i << "]: ";
