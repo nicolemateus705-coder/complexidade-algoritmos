@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+
 using namespace std;
 
 int main() {
@@ -8,7 +10,7 @@ int main() {
     cout << "Quantidade de coeficientes: ";
     cin >> n;
 
-    double a[n];
+    vector<double> a(n);
 
     for(int i = 0; i < n; i++) {
         cout << "Coeficiente a[" << i << "]: ";
@@ -19,7 +21,6 @@ int main() {
     cin >> x;
 
     for(int i = 0; i < n; i++) {
-
         double potencia = 1;
 
         for(int j = 0; j < i; j++) {
